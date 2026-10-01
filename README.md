@@ -10,13 +10,13 @@ The project combines combinatorics with programming to investigate chessboard co
 
 The main part of the project is a program that computes the **rook polynomial of an arbitrary board**, including boards containing blocked squares.
 
-For a board \(B\), let \(r_k\) be the number of ways of placing \(k\) mutually non-attacking rooks on its available squares. The rook polynomial is
+For a board $B$, let $r_k$ be the number of ways of placing $k$ mutually non-attacking rooks on its available squares. The rook polynomial is
 
-\[
+$$
 R_B(x)=\sum_{k\geq0}r_kx^k.
-\]
+$$
 
-We represent the board as a binary matrix and use **matrix permanents and recursively generated submatrices** to compute the coefficients \(r_k\).
+We represent the board as a binary matrix and use **matrix permanents and recursively generated submatrices** to compute the coefficients $r_k$.
 
 This allows rook polynomials to be calculated computationally for general board configurations rather than only for a standard chessboard.
 
